@@ -16,7 +16,7 @@ function kilometerToMeter(killometer){
     // killometer to meter calculation
     else{
         var meter = killometer*1000;  
-        return meter;
+        return meter; 
     }
 }
 // Test Cases
@@ -43,10 +43,10 @@ function budgetCalculator(watch,phone,laptop){
         // laptop price = 300
         var laptopCost = laptop*500;
 
-        // total ost
+        // total cost
         var totalCost = (watchCost+phoneCost+laptopCost);
         
-        return totalCost;
+        return totalCost; /* Total calculated Cost */
     }
 }
 // Test cases
@@ -97,3 +97,16 @@ function hotelCost(dayPassed){
 // console.log(hotelCost(5));
 // console.log(hotelCost(15));
 // console.log(hotelCost(25));
+
+
+
+// problem solving 4
+function megaFriend(friendName){
+
+    for(var i=0; i<friendName.length; i++){
+        console.log(friendName[i]);
+    }
+    return friendName;
+}
+var friendName = ["sunjid", "hasan", "mafi"];
+console.log(megaFriend(friendName));
