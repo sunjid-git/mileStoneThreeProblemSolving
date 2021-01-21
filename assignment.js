@@ -60,9 +60,7 @@ function hotelCost(dayPassed){
 
     // to avoid negative conflict
     if(dayPassed < 0){
-
         return 'Days can not be negative.';
-
     }
     // first 10 days hotel cost = 100
     else if(dayPassed <= 10 ){
@@ -104,7 +102,7 @@ function hotelCost(dayPassed){
 function megaFriend(friendName){
 
     // Taking an empty string to use as temporary field
-    var temporaryLargestName = "";
+    var temporaryLargestName = " ";
 
     // will go through the whole array index elements
     for(var i=0; i<friendName.length; i++){
@@ -113,7 +111,7 @@ function megaFriend(friendName){
         var word = friendName[i];
         
         // checking wheather it is bigger than previously stored element
-        if(word.length>temporaryLargestName.length){
+        if(word.length > temporaryLargestName.length){
 
             // if larger then replace the name and set the larger value
             temporaryLargestName = word;
@@ -123,5 +121,9 @@ function megaFriend(friendName){
 }
 
 // Test cases
-var friendName = ["Mohammad","sunjid", "hasan", "mafi","Akanda"];
-console.log(megaFriend(friendName));
+
+// var friendName = ["Mohammad","sunjid", "hasan", "mafi","Akanda"];
+// console.log(megaFriend(friendName));
+
+// var friendName = ["Helal","Milly", "Mukta", "Mafi","Moon","Tajwar","Tarannum"];
+// console.log(megaFriend(friendName));
