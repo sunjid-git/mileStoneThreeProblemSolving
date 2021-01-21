@@ -103,10 +103,25 @@ function hotelCost(dayPassed){
 // problem solving 4
 function megaFriend(friendName){
 
+    // Taking an empty string to use as temporary field
+    var temporaryLargestName = "";
+
+    // will go through the whole array index elements
     for(var i=0; i<friendName.length; i++){
-        console.log(friendName[i]);
+        
+        // temporary storage
+        var word = friendName[i];
+        
+        // checking wheather it is bigger than previously stored element
+        if(word.length>temporaryLargestName.length){
+
+            // if larger then replace the name and set the larger value
+            temporaryLargestName = word;
+        }
     }
-    return friendName;
+    return temporaryLargestName;  /* largest friend name */
 }
-var friendName = ["sunjid", "hasan", "mafi"];
+
+// Test cases
+var friendName = ["Mohammad","sunjid", "hasan", "mafi","Akanda"];
 console.log(megaFriend(friendName));
