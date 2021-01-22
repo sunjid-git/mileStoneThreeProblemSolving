@@ -93,10 +93,10 @@ function hotelCost(dayPassed){
 }
 // Test cases
 // console.log(hotelCost(0));
-// console.log(hotelCost(-5));
-// console.log(hotelCost(5));
-// console.log(hotelCost(15));
-// console.log(hotelCost(25));
+// console.log(hotelCost(-6));
+// console.log(hotelCost(6));
+// console.log(hotelCost(13));
+// console.log(hotelCost(43));
 
 
 
